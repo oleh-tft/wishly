@@ -1,0 +1,398 @@
+@import "./variables.css";
+@import "./fonts.css";
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-lato);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  font-family: var(--font-lato);
+}
+
+/* Layout */
+
+.dashboard-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 95%;
+  min-height: calc(100vh - 70px);
+  background-color: var(--color-white);
+  flex-wrap: wrap;
+}
+
+.dashboard-content {
+  flex: 12;
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+  padding: 1.5em 1em;
+}
+
+/* Header */
+
+.logo {
+  color: var(--color-white);
+  font-family: var(--font-momo);
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 22.5px;
+  letter-spacing: 0.38px;
+  user-select: none;
+}
+
+.main-header {
+  background-image: url('../assets/images/header-grad.png');
+  background-size: 100% 100%;
+  background-position: center right;
+  background-repeat: no-repeat;
+  user-select: none;
+  color: var(--color-white);
+  min-height: 68px;
+  width: 100%;
+  display: flex;
+}
+
+.main-header-public {
+  width: 100%;
+  padding: 1.75em 0;
+  color: var(--color-white);
+  user-select: none;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  max-width: 95%;
+  margin: 0 auto;
+  min-height: 2em;
+}
+
+.header-nav,
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-nav ul li a {
+  color: var(--color-white);
+}
+
+.header-nav ul li a:hover {
+  border-bottom: 2px solid var(--color-white);
+}
+
+.header-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+  font-size: .875em;
+}
+
+.account-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.75em;
+}
+
+.sign-in {
+  color: var(--color-white);
+}
+
+.log-in {
+  color: var(--color-white);
+  background-color: var(--color-black);
+  padding: .5em 1.25em;
+  border-radius: 100px;
+  transition: all .3s ease-out;
+}
+
+.log-in:hover {
+  background-color: var(--color-black-hover);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5em;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-white);
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-pink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-white);
+  user-select: none;
+  text-decoration: none;
+}
+
+.notification-btn {
+  width: 24px;
+  height: 24px;
+  color: var(--color-white);
+}
+
+.notification-btn:hover {
+  fill: var(--color-white);
+}
+
+.menu-btn {
+  display: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-btn.open {
+  transform: rotate(90deg);
+}
+
+.burger-menu-overlay {
+  position: fixed;
+  top: 4em;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 4em);
+  background-color: #00000040;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+
+.burger-menu-content {
+  width: 100%;
+  background-color: var(--color-white);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: var(--border-main);
+  height: fit-content;
+}
+
+.burger-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+.burger-nav-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: 18px;
+  padding-left: 1.75em;
+}
+
+.arrow {
+  color: var(--color-black);
+}
+
+.burger-nav-item.active {
+  color: var(--color-pink);
+  position: relative;
+  padding-left: 1.75em;
+}
+
+.burger-nav-item.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--color-pink);
+}
+
+.burger-divider {
+  height: 16px;
+}
+
+.burger-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: auto;
+}
+
+.burger-footer .language-dropdown {
+  color: var(--color-black);
+}
+
+.burger-user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-name-dark {
+  font-size: 16px;
+  color: var(--color-black);
+}
+
+.bell-icon {
+  font-size: 18px;
+  color: var(--color-white);
+}
+
+/* Sidebar */
+
+.sidebar {
+  flex: 2;
+  padding-top: 5em;
+}
+
+.sidebar-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+  height: fit-content;
+}
+
+.menu-item-spaced {
+  margin-top: 24px;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.2s ease;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 1em;
+}
+
+.menu-item.active .menu-link {
+  color: var(--color-pink);
+}
+
+.menu-item.active .active-indicator {
+  position: absolute;
+  left: 0;
+  top: 15%;
+  height: 70%;
+  width: 4px;
+  background-color: var(--color-pink);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+@media (max-width: 800px) {
+  .main-header-public {
+    font-size: .875rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .backText {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .dashboard-layout {
+    width: 100%;
+    padding: 0;
+  }
+
+  .dashboard-content {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .main-header .header-container {
+    width: 92%;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .user {
+    display: none;
+  }
+
+  .main-header-public {
+    padding: 1.75em 1em;
+  }
+}

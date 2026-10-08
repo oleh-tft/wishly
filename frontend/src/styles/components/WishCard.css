@@ -1,0 +1,93 @@
+.item-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-main);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.item-head-wrap {
+    position: relative;
+    user-select: none;
+}
+
+.item-head-controls {
+    display: flex;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 40%;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.item-card:hover .item-head-controls {
+    opacity: 1;
+}
+
+.item-head-controls .main-button {
+    transform: scale(0.85);
+}
+
+.item-image-placeholder {
+    background-color: var(--color-placeholder-2);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.item-body {
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.item-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-black);
+    margin: 0;
+}
+
+.item-price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 0.5rem;
+}
+
+.item-card.is-reserved {
+    opacity: 0.6;
+}
+
+.item-card.is-reserved .item-image-placeholder {
+    background-color: var(--color-placeholder-1);
+}
+
+.item-card.is-reserved .item-title,
+.item-card.is-reserved .item-price {
+    color: var(--color-black);
+}
+
+.item-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.item-card:hover .item-head-controls {
+    opacity: 1;
+}
+
+.item-head-controls .main-button, .wishlist-head-controls-mobile .main-button {
+    transform: scale(0.85);
+}
+
+.item-card.is-reserved-by-me {
+    background-color: var(--color-blue-dark-bg);
+}

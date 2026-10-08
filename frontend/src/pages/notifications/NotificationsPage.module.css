@@ -1,0 +1,25 @@
+.notificationWrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 47.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0;
+}
+
+
+.card {
+  border-radius: var(--radius-main);
+  border: var(--border-main);
+  overflow: hidden;
+  width: 100%;
+}

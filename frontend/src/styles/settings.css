@@ -1,0 +1,237 @@
+.settings-page-view {
+  width: 100%;
+  max-width: 47.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding-bottom: 60px;
+}
+
+.settings-card {
+  background-color: var(--color-white);
+  border: var(--border-main);
+  border-radius: var(--radius-main);
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 18px 24px;
+  border-bottom: var(--border-main);
+  background-color: var(--color-white);
+}
+
+.card-header h3 {
+  font-family: var(--font-lato);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin: 0;
+}
+
+.card-settings-body {
+  padding: 24px;
+}
+
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.username-at-symbol {
+  font-family: var(--font-lato);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--color-placeholder-2);
+}
+
+.toggles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.privacy-question {
+  font-family: var(--font-lato);
+  font-size: 14px;
+  color: var(--color-gray);
+  margin: 0 0 8px 0;
+}
+
+.radio-option-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: .75em 20px;
+  border: var(--border-main);
+  border-radius: var(--radius-main);
+  margin-bottom: 12px;
+  cursor: pointer;
+  background-color: var(--color-pink-bg);
+  transition: all 0.2s ease;
+}
+
+.radio-option-box:last-child {
+  margin-bottom: 0;
+}
+
+.radio-option-box input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.custom-radio-circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-placeholder-2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.custom-radio-circle::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-pink);
+  border-radius: 50%;
+  display: block;
+  transform: scale(0);
+  transition: transform 0.2s ease;
+}
+
+.radio-option-box.checked {
+  border-color: var(--color-pink);
+  background-color: var(--color-pink-light);
+}
+
+.radio-option-box input[type="radio"]:checked + .custom-radio-circle {
+  border-color: var(--color-pink);
+}
+
+.radio-option-box input[type="radio"]:checked + .custom-radio-circle::after {
+  transform: scale(1);
+}
+
+.radio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.radio-title {
+  font-family: var(--font-lato);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.radio-desc {
+  font-family: var(--font-lato);
+  font-size: 12px;
+  color: var(--color-gray);
+}
+
+.settings-danger-zone-card {
+  border: 1px solid #DC325026;
+}
+
+.settings-danger-zone-card .card-header {
+  border-bottom: 1px solid #DC325026;
+  color: var(--color-red);
+}
+
+.settings-danger-zone-card .card-header h3 {
+  color: var(--color-red);
+}
+
+.danger-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.danger-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.danger-title {
+  font-family: var(--font-lato);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.danger-desc {
+  font-family: var(--font-lato);
+  font-size: 13px;
+  color: var(--color-gray);
+}
+
+.settings-footer-actions {
+  display: flex;
+  justify-content: end;
+  margin-top: 8px;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  .settings-page-view {
+    padding: 0 16px 40px 16px;
+    gap: 20px;
+  }
+
+  .card-header {
+    padding: 16px 20px;
+  }
+
+  .card-settings-body {
+    padding: 20px;
+  }
+.danger-row {
+  display: flex;
+  flex-direction: row;        /* Forces horizontal row alignment */
+  justify-content: space-between; /* Pushes text to the left, button to the right */
+  align-items: center;        /* Centers them vertically relative to each other */
+  width: 100%;
+  gap: 24px;
+}
+
+/* Allows the text side to take up the remaining space without squeezing the button */
+.danger-text {
+  flex: 1;
+  text-align: left;           /* Forces text alignment to the left */
+}
+
+/* Guarantees the delete button keeps its size and doesn't shrink */
+.danger-row > *:last-child {
+  flex-shrink: 0;
+}
+
+  .settings-footer-actions {
+    width: 100%;
+  }
+
+  .save-changes-btn {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 24px;
+  }
+}
+.toggle-switch-row-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

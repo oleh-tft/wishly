@@ -1,0 +1,101 @@
+.row {
+  display: flex;
+  padding: 16px 20px;
+  border-bottom: var(--border-main);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row__body {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.row__titleLine {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 2px;
+}
+
+.row__title {
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row__dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-pink);
+  border-radius: 50%;
+}
+
+.row__desc {
+  color: var(--color-gray);
+  font-size: 13px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row__meta {
+  text-align: right;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  min-width: 80px;
+}
+
+.row__time {
+  color: var(--color-gray);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.row__markRead {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--color-indigo);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.notificationIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  height: 2.5em;
+  min-width: 2.5em;
+  margin-right: 1em;
+}
+
+.iconReserved {
+  color: var(--color-green);
+  background-color: var(--color-green-bg);
+}
+
+.iconShared {
+  color: var(--color-indigo);
+  background-color: var(--color-indigo-bg);
+}
+
+.iconCancelled {
+  color: var(--color-red);
+  background-color: var(--color-red-bg);
+}
+
+.iconEvent {
+  color: var(--color-brown);
+  background-color: var(--color-brown-bg);
+}

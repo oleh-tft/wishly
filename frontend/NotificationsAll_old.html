@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCRUM-29 - Notifications</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/notifications.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="/" class="logo" aria-label="Wishly — на головну">wishly</a>
+            </div>
+            <nav class="header-nav"></nav>
+            <div class="header-right">
+                <a href="/" class="back-link" aria-label="Назад">← Back</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+
+        <div class="notifications-header">
+            <div class="title-block">
+                <h1 class="not-text">Notifications</h1>
+                <span class="unread-badge">3 unread</span>
+            </div>
+
+            <button class="btn-mark-all">
+                <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4.5L4 7.5L11 1" stroke="#f23f5d" stroke-width="1.2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                Mark all as read
+            </button>
+        </div>
+        <div class="tabs-container">
+            <div class="filter-tabs">
+                <a href="NotificationsAll.html" class="tab-btn active">All</a>
+
+                <a href="NotificationsUnread.html" class="tab-btn">
+                    Unread <span class="tab-count">3</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="notifications-card">
+
+            <div class="notification-row">
+                <img src="./pics/Container.png" alt="Reserved" class="icon-box">
+                <div class="notif-body">
+                    <div class="notif-title-line">
+                        <span class="notif-title">Item reserved</span>
+                        <span class="dot-unread"></span>
+                    </div>
+                    <p class="notif-desc">Emma K. reserved 'Aesop Parsley Seed Serum' from your Birthday 2025 list.</p>
+                </div>
+                <div class="notif-meta">
+                    <span class="notif-time">2 min ago</span>
+                    <a href="#" class="link-mark-read">Mark read</a>
+                </div>
+            </div>
+
+            <div class="notification-row">
+                <img src="./pics/Container1.png" alt="Shared" class="icon-box">
+                <div class="notif-body">
+                    <div class="notif-title-line">
+                        <span class="notif-title">Wishlist shared with you</span>
+                        <span class="dot-unread"></span>
+                    </div>
+                    <p class="notif-desc">Tom shared his 'Housewarming Essentials' wishlist with you.</p>
+                </div>
+                <div class="notif-meta">
+                    <span class="notif-time">1 hr ago</span>
+                    <a href="#" class="link-mark-read">Mark read</a>
+                </div>
+            </div>
+
+            <div class="notification-row">
+                <img src="./pics/Container2.png" alt="Cancelled" class="icon-box">
+                <div class="notif-body">
+                    <div class="notif-title-line">
+                        <span class="notif-title">Reservation cancelled</span>
+                        <span class="dot-unread"></span>
+                    </div>
+                    <p class="notif-desc">A reservation on 'Braun Ceramic Grinder' was cancelled and is available again.
+                    </p>
+                </div>
+                <div class="notif-meta">
+                    <span class="notif-time">3 hr ago</span>
+                    <a href="#" class="link-mark-read">Mark read</a>
+                </div>
+            </div>
+
+            <div class="notification-row">
+                <img src="./pics/Container3.png" alt="Birthday" class="icon-box">
+                <div class="notif-body">
+                    <div class="notif-title-line">
+                        <span class="notif-title">Birthday coming up</span>
+                    </div>
+                    <p class="notif-desc">Sara Mitchell's birthday is in 5 days. Don't forget to check her wishlist!</p>
+                </div>
+                <div class="notif-meta">
+                    <span class="notif-time">Yesterday</span>
+                </div>
+            </div>
+
+            <div class="notification-row">
+                <img src="./pics/Container4.png" alt="Milestone" class="icon-box">
+                <div class="notif-body">
+                    <div class="notif-title-line">
+                        <span class="notif-title">Wishlist milestone</span>
+                    </div>
+                    <p class="notif-desc">Your 'Wedding Registry' list just reached 20 items.</p>
+                </div>
+                <div class="notif-meta">
+                    <span class="notif-time">2 days ago</span>
+                </div>
+            </div>
+
+            <div class="notification-row">
+                <img src="./pics/Container5.png" alt="Reserved" class="icon-box">
+                <div class="notif-body">
+                    <div class="notif-title-line">
+                        <span class="notif-title">Item reserved</span>
+                    </div>
+                    <p class="notif-desc">James L. reserved 'Analog Minimalist Watch' from your Winter Essentials list.
+                    </p>
+                </div>
+                <div class="notif-meta">
+                    <span class="notif-time">3 days ago</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

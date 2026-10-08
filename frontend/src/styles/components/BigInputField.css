@@ -1,0 +1,13 @@
+.input-wrapper.text-area-wrapper .input-icon-container {
+  top: 14px;
+  transform: none;
+}
+
+.form-input.big-input {
+  max-height: 8em;
+  height: 8em;
+  overflow-y: auto;
+  resize: none;
+  border-radius: 16px;
+  padding: 12px 16px;
+}

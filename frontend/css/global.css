@@ -1,0 +1,49 @@
+/* 1. Reset margins and padding for the entire website */
+html,
+body {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Base typography settings (adjust to match your Figma) */
+body {
+    font-family: Inter, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #0F0E1A;
+}
+
+.logo {
+    font-family: Momo Trust Display;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 22.5px;
+    letter-spacing: -0.38px;
+}
+
+.dashboard-layout {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    /* Adjust '70px' to match your exact header height */
+    background-color: #ffffff;
+}
+
+/* This container acts as the viewing window next to the sidebar */
+.dashboard-content {
+    flex: 1;
+    /* Automatically takes up all remaining width */
+    display: flex;
+    justify-content: center;
+    /* Centers the content container inside the window */
+    padding: 40px 20px;
+    box-sizing: border-box;
+}

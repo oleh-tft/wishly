@@ -1,0 +1,36 @@
+.page-not-found-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.page-not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.page-not-found-title {
+    font-family: var(--font-momo);
+    font-weight: 400;
+    font-size: 25vw;
+    line-height: 1em;
+}
+
+.page-not-found-text {
+    font-size: 1.75em;
+}
+
+.page-not-found-button-back {
+    font-size: 1.25em;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: 500;
+    font-style: Medium;
+    user-select: none;
+}

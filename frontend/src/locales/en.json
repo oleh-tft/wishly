@@ -1,0 +1,410 @@
+{
+  "landing": {
+    "modal": {
+      "title": "Want to try how it works?",
+      "button": "Let's start !",
+      "description": "See Wishly in action and try all features right now."
+    },
+    "main": {
+      "labelFull": "Simple & beautiful wishlists",
+      "labelSimple": "Simple",
+      "labelBeautiful": "Beautiful wishlists",
+      "description": "Create beautiful wishlists in minutes and share them with friends and family. Keep all your gift ideas in one place and make special occasions easier for everyone.",
+      "btnCreate": "Create Wishlist",
+      "btnHow": "How it works?"
+    },
+    "about": {
+      "tag": "ABOUT US",
+      "title": "We're on a mission to make gift-giving easier for everyone.",
+      "p1": "Our platform helps people collect their wishes in one beautiful place and share them with friends and family effortlessly. No more guessing, duplicate gifts, or scattered screenshots — just organized wishlists and better gift-giving experiences.",
+      "p2": "By bringing wishes, ideas, and inspiration into one elegant space, we help people celebrate special moments without the uncertainty of choosing the perfect gift.",
+      "stat1": "Wishlists created",
+      "stat2": "Countries",
+      "stat3": "Average rating"
+    },
+    "hiw": {
+      "title": "How it works",
+      "step1Title": "Create",
+      "step1Desc": "Start a wishlist for your birthday, holidays, books, gadgets, cosmetics, or anything you love",
+      "step2Title": "Add wishes",
+      "step2Desc": "Add items with a simple link. Include images, prices, and notes to make your wishes clear",
+      "step3Title": "Share",
+      "step3Desc": "Send your wishlist to friends and family with one link. They can reserve gifts without spoiling the surprise"
+    },
+    "wcu": {
+      "title": "Why choose us",
+      "headingLine1": "Everything you need.",
+      "headingLine2": "Nothing you don't.",
+      "desc": "Wishly is designed to stay out of your way. No bloat, no social feeds, no noise — just a clean place to collect what matters and share it with the people who care.",
+      "adv1Title": "Simple & Beautiful",
+      "adv1Desc": "A clean and intuitive interface designed to make wishlist creation effortless",
+      "adv2Title": "Keep Everything Organized",
+      "adv2Desc": "Create multiple wishlists and group your wishes the way you like",
+      "adv3Title": "No More Duplicate Gifts",
+      "adv3Desc": "Friends can reserve gifts privately, so everyone knows what's already taken",
+      "adv4Title": "Access Anywhere",
+      "adv4Desc": "Designed for mobile and desktop, so you can add wishes whenever inspiration strikes"
+    },
+    "preview": {
+      "tag": "Wishlist preview",
+      "title": "Beautiful by default.",
+      "desc": "Every wishlist looks this good — no design skills required.",
+      "mockTitle": "Sara's Birthday 2026",
+      "items": "items",
+      "reserved": "reserved",
+      "btnSettings": "Settings",
+      "btnShare": "Share",
+      "endText": "Yours looks just like this - ",
+      "endLink": "create one in seconds.",
+      "itemsList": {
+        "1": "Aesop Parsley Seed Serum",
+        "2": "Muji Ultrasonic Diffuser",
+        "3": "Braun Ceramic Grinder",
+        "4": "Moleskine Leather Notebook",
+        "5": "Cashmere Ribbed Scarf",
+        "6": "Arc'teryx Beta SL Jacket",
+        "7": "Analog Minimalist Watch",
+        "8": "Porcelain Mug Set"
+      }
+    },
+    "create": {
+      "title": "Ready to make your first wishlist?",
+      "subtitle": "Free forever. No credit card required.",
+      "btn": "Create Wishlist"
+    }
+  },
+  "time": {
+    "justNow": "Just now",
+    "minutesAgo_one": "{{count}} min ago",
+    "minutesAgo_other": "{{count}} mins ago",
+    "hoursAgo_one": "{{count}} hr ago",
+    "hoursAgo_other": "{{count}} hrs ago",
+    "yesterday": "Yesterday",
+    "daysAgo_one": "{{count}} day ago",
+    "daysAgo_other": "{{count}} days ago"
+  },
+  "notFound": {
+    "title": "404",
+    "text": "Oops... Page not found!",
+    "back": "Back"
+  },
+  "notifications": {
+    "loading": "Loading notifications…",
+    "error": "Error:",
+    "emptyAllHeading": "No notifications yet",
+    "emptyAllSubtext": "We'll let you know when something comes up.",
+    "emptyUnreadHeading": "You're all caught up!",
+    "emptyUnreadSubtext": "No unread notifications right now.",
+    "detailsTitle": "Notification details",
+    "title": "Notifications",
+    "unreadCount_one": "{{count}} unread",
+    "unreadCount_other": "{{count}} unread",
+    "markAllRead": "Mark all as read",
+    "markRead": "Mark read",
+    "tabs": {
+      "all": "All",
+      "unread": "Unread"
+    }
+  },
+  "profile": {
+    "loading": "Loading profile details...",
+    "title": "Profile",
+    "subtitle": "Your personal information and statistics.",
+    "noBio": "No biography added yet.",
+    "editBtn": "Edit Profile",
+    "stats": {
+      "totalWishlists": "Total Wishlists",
+      "totalItems": "Total Items",
+      "reserved": "Reserved by Others",
+      "shared": "Lists Shared"
+    },
+    "accountDetails": {
+      "title": "Account Details",
+      "fullName": "Full Name",
+      "email": "Email",
+      "memberSince": "Member Since"
+    },
+    "signOutBtn": "Sign Out",
+    "editModal": {
+      "title": "Edit profile",
+      "saving": "Saving...",
+      "save": "Save",
+      "cancel": "Cancel",
+      "photoLabel": "PROFILE PHOTO",
+      "nameLabel": "FULL NAME",
+      "bioLabel": "BIO"
+    },
+    "signOutModal": {
+      "title": "Sign out?",
+      "confirm": "Sign out",
+      "cancel": "Cancel",
+      "desc": "Are you sure you want to sign out?"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account and preferences.",
+    "successSaved": "Settings saved successfully!",
+    "errorLoad": "Failed to load profile data.",
+    "errorSave": "An error occurred while saving.",
+    "errorDelete": "Failed to delete account.",
+    "accountInfo": {
+      "title": "Account Information",
+      "fullName": "Full Name",
+      "email": "Email Address"
+    },
+    "preferences": {
+      "title": "Preferences",
+      "emailNotify": "Email notifications",
+      "emailNotifyDesc": "Receive wishlist updates via email",
+      "reserveNotify": "Reservation notifications",
+      "reserveNotifyDesc": "Get notified when someone reserves an item",
+      "activityNotify": "Wishlist activity",
+      "activityNotifyDesc": "Weekly summary of your wishlist activity",
+      "language": "Language",
+      "languageDesc": "Changes the language across Wishly"
+    },
+    "privacy": {
+      "title": "Privacy",
+      "question": "Who can view my wishlists?",
+      "onlyMe": "Only me",
+      "onlyMeDesc": "Your wishlists are completely private",
+      "anyone": "Anyone with the link",
+      "anyoneDesc": "Only people you share the link with can view"
+    },
+    "dangerZone": {
+      "title": "Danger Zone",
+      "deleteAccount": "Delete account",
+      "deleteAccountDesc": "Permanently delete your account and all wishlists. This cannot be undone.",
+      "deleteBtn": "Delete"
+    },
+    "footer": {
+      "saving": "Saving...",
+      "save": "Save changes"
+    },
+    "deleteModal": {
+      "title": "Delete account?",
+      "confirm": "Delete",
+      "cancel": "Cancel",
+      "desc": "This action cannot be undone."
+    }
+  },
+  "auth": {
+    "signUpTitle": "Sign up for ",
+    "alreadyHaveAccount": "Already have an account? ",
+    "logInLink": "Log in",
+    "logInTitle": "Log in to ",
+    "dontHaveAccount": "Don't have an account? ",
+    "signUpLink": "Sign up",
+    "loginFormAria": "Login form",
+    "signUpSubmit": "Sign up",
+    "logInSubmit": "Log in",
+    "back": "Back",
+    "form": {
+      "signIn": "Sign in",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "example@email.com",
+      "passwordPlaceholder": "••••••••••••",
+      "rememberMe": "Remember me",
+      "loading": "Loading…",
+      "aria": {
+        "form": "Sign in form",
+        "name": "Name",
+        "email": "Email",
+        "password": "Password",
+        "hidePassword": "Hide password",
+        "showPassword": "Show password"
+      },
+      "errors": {
+        "nameRequired": "Full name is required.",
+        "nameMax": "Name must be {{max}} characters or fewer.",
+        "namePattern": "Name may only contain Latin letters, spaces, hyphens, or apostrophes.",
+        "emailRequired": "Email address is required.",
+        "emailMax": "Email must be {{max}} characters or fewer.",
+        "emailInvalid": "Please enter a valid email address.",
+        "passwordLength": "Password must be between {{min}} and {{max}} characters.",
+        "generic": "Something went wrong"
+      }
+    }
+  },
+  "sharedWishes": {
+    "loading": "Loading shared wishlists...",
+    "error": "Error: ",
+    "title": "Shared Wishes",
+    "subtitle": "Wishlists your friends and family have shared with you.",
+    "searchPlaceholder": "Search wishlists...",
+    "stats": {
+      "sharedLists": "Shared Lists",
+      "upcomingEvents": "Upcoming Events",
+      "reservedGifts": "Reserved Gifts"
+    },
+    "tabs": {
+      "All": "All",
+      "Upcoming": "Upcoming",
+      "Active": "Active",
+      "Completed": "Completed"
+    },
+    "listsCount": "{{count}} lists",
+    "noResults": "No shared wishlists found.",
+    "ongoing": "Ongoing",
+    "defaultUser": "User"
+  },
+  "reservations": {
+    "title": "Reservations",
+    "tabs": {
+      "madeByMe": "Made by me",
+      "madeForMe": "Made for me"
+    },
+    "desc": {
+      "madeByMe": "Gifts you've reserved for others. The surprise stays safe!",
+      "madeForMe": "Gifts that were saved especially for you."
+    },
+    "alert": {
+      "title": "Item reserved",
+      "madeByMe": "The wishlist owner won't see who reserved the gift",
+      "madeForMe": "You can’t see who reserved items"
+    },
+    "columns": {
+      "name": "NAME",
+      "wishlist": "WISHLIST",
+      "giftingDay": "GIFTING DAY",
+      "status": "STATUS"
+    },
+    "loading": "Loading...",
+    "empty": "No reservations found.",
+    "modal": {
+      "title": "Wish details",
+      "link": "Link"
+    }
+  },
+  "wishlists": {
+    "title": "My Wishlists",
+    "listsCount": "lists",
+    "itemsTotal": "items total",
+    "newWishlist": "New wishlist",
+    "stats": {
+      "totalItems": "Total items",
+      "reserved": "Reserved by others",
+      "shared": "Lists shared"
+    },
+    "loading": "Loading wishlists…",
+    "error": "Error: ",
+    "empty": "You don't have any wishlists yet.",
+    "modal": {
+      "createTitle": "Create new wishlist",
+      "createBtn": "Create wishlist",
+      "settingsTitle": "Wishlist settings",
+      "saveBtn": "Save changes",
+      "cancelBtn": "Cancel",
+      "deleteTitle": "Delete wishlist?",
+      "deleteBtn": "Delete",
+      "deleteDesc": "This action cannot be undone."
+    },
+    "form": {
+      "name": "NAME",
+      "namePlaceholder": "My Wishlist",
+      "desc": "DESCRIPTION",
+      "descPlaceholder": "Describe what this wishlist is for",
+      "date": "GIFTING DATE",
+      "privacyLabel": "Who can view my wishlists?",
+      "onlyMe": "Only me",
+      "onlyMeDesc": "Your wishlists are completely private",
+      "anyone": "Anyone with the link",
+      "anyoneDesc": "Only people you share the link with can view"
+    }
+  },
+  "wishlistDesc": {
+    "back": "Back",
+    "items": "items",
+    "reserved": "reserved",
+    "settingsBtn": "Settings",
+    "shareBtn": "Share link",
+    "copiedBtn": "Copied!",
+    "addWishBtn": "Add wish",
+    "modal": {
+      "reserveTitle": "Reserve",
+      "cancelReserveTitle": "Cancel reservation",
+      "editWishTitle": "Edit wish",
+      "addWishTitle": "Add wish",
+      "createBtn": "Create",
+      "saveBtn": "Save changes",
+      "cancelBtn": "Cancel",
+      "deleteTitle": "Delete wish?",
+      "deleteBtn": "Delete",
+      "deleteDesc": "This action cannot be undone.",
+      "wishDetails": "Wish details",
+      "linkBtn": "Link"
+    },
+    "form": {
+      "name": "NAME",
+      "namePlaceholder": "Enter name",
+      "price": "PRICE",
+      "pricePlaceholder": "25.00",
+      "link": "LINK",
+      "linkPlaceholder": "https://",
+      "wishlist": "WISHLIST",
+      "desc": "DESCRIPTION",
+      "descPlaceholder": "For example, color, size, model, etc."
+    }
+  },
+  "header": {
+    "guest": "Guest",
+    "nav": {
+      "aboutUs": "About us",
+      "howItWorks": "How it works",
+      "advantages": "Advantages",
+      "preview": "Preview"
+    },
+    "auth": {
+      "logIn": "Log in",
+      "signUp": "Sign up"
+    },
+    "back": "Back",
+    "burger": {
+      "wishlist": "Wishlist",
+      "shared": "Shared",
+      "reservations": "Reservations",
+      "profile": "Profile",
+      "settings": "Settings",
+      "signOut": "Sign out"
+    }
+  },
+  "sidebar": {
+    "wishlists": "Wishlists",
+    "shared": "Shared",
+    "reservation": "Reservation",
+    "profile": "Profile",
+    "settings": "Settings"
+  },
+  "cards": {
+    "reserved": {
+      "ongoing": "Ongoing",
+      "moreInfo": "More info",
+      "wishlistLabel": "Wishlist",
+      "openBtn": "Open",
+      "celebrationLabel": "Celebration",
+      "detailsBtn": "Details"
+    },
+    "shared": {
+      "items": "items",
+      "reservedLabel": "Reserved",
+      "openBtn": "Open"
+    },
+    "wish": {
+      "reservedBtn": "Reserved",
+      "awaitingBtn": "Awaiting reservation",
+      "reservedByYouBtn": "Reserved by you",
+      "reserveBtn": "Reserve",
+      "editBtn": "Edit",
+      "deleteBtn": "Delete"
+    },
+    "wishlist": {
+      "settingsBtn": "Settings",
+      "deleteBtn": "Delete",
+      "shareBtn": "Share",
+      "copiedBtn": "Copied!",
+      "items": "items",
+      "openBtn": "Open"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 1.75em 0;
+  user-select: none;
+  z-index: 10;
+}
+
+.topbarWrap {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.topbar__logo {
+  font-family: var(--font-momo);
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.38px;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.topbar__right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topbar__backLink {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-white);
+}
+
+@media (max-width: 800px) {
+  .topbar {
+    padding: 28px 24px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .backText {
+    display: none;
+  }
+
+  .backArrow {
+    font-size: 18px;
+    line-height: 1;
+  }
+}
