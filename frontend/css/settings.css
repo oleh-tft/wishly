@@ -1,0 +1,262 @@
+/* Container bounds centering layout */
+.settings-container {
+    padding-top: 48px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Titles */
+.settings-title {
+    padding-top: 40px;
+
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    color: #000000;
+}
+.settings-subtitle {
+    color: #8c8c8c;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Reusable Settings Panels */
+.settings-card {
+    background: #ffffff;
+    border: 1px solid #eef0f2;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.card-title {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    padding: 20px 24px;
+    color: #000000;
+}
+.card-body {
+    padding: 0 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --- Form Field Inputs --- */
+.form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.input-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #8c8c8c;
+    margin-bottom: 8px;
+    display: block;
+}
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.input-icon {
+    position: absolute;
+    left: 16px;
+    color: #b0b0b0;
+    font-size: 14px;
+}
+.form-input {
+    width: 100%;
+    padding: 14px 16px 14px 44px;
+    border: 1px solid #eef0f2;
+    border-radius: 24px; /* Rounded pill style from image */
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* --- Preferences Switch Toggle List --- */
+.toggle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f8fafc;
+}
+.toggle-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.toggle-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 80%;
+}
+.toggle-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
+.toggle-sub, .privacy-prompt {
+    font-size: 13px;
+    color: #8c8c8c;
+    margin: 0;
+}
+
+/* Pure CSS Switch Element */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+}
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #cbd5e1;
+    transition: .3s;
+    border-radius: 24px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px; width: 18px;
+    left: 3px; bottom: 3px;
+    background-color: white;
+    transition: .3s;
+    border-radius: 50%;
+}
+input:checked + .slider { background-color: #FF4880; } /* Brand Pink active toggle */
+input:checked + .slider:before { transform: translateX(20px); }
+
+/* --- Privacy Radio Options --- */
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+/* Base wrapper */
+.radio-card {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+/* Hide the native radio button completely, but keep it functional */
+.radio-card input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* This container acts as our visual card */
+.radio-card-content {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    border: 1px solid #eef0f2;
+    border-radius: 16px;
+    gap: 16px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* The outer circle of the radio button */
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #cbd5e1;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    transition: border-color 0.2s;
+}
+
+.radio-text { display: flex; flex-direction: column; gap: 4px; }
+.radio-label { font-size: 14px; font-weight: 700; color: #000000; }
+.radio-sub { font-size: 12px; color: #8c8c8c; }
+
+/* =========================================================
+   ✨ THE PURE CSS MAGIC: STYLE THE CARD WHEN RADIO IS CHECKED 
+   ========================================================= */
+
+/* 1. Change card background and border to brand pink banner hint */
+.radio-card input[type="radio"]:checked + .radio-card-content {
+    border-color: #FF4880;
+    background-color: #FFF0F4;
+}
+
+/* 2. Turn the outer radio ring pink */
+.radio-card input[type="radio"]:checked + .radio-card-content .radio-custom {
+    border-color: #FF4880;
+}
+
+/* 3. Generate the middle solid pink dot dynamically */
+.radio-card input[type="radio"]:checked + .radio-card-content .radio-custom::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #FF4880;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Danger Zone - Perfect Row Alignment */
+.border-danger { border-color: #ffe4e6; }
+.color-danger { color: #e11d48; }
+.danger-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-delete {
+    background-color: #fff1f2;
+    color: #e11d48;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+.btn-img-accent {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    /* Turns the base icon red inside the button */
+    filter: invert(18%) sepia(88%) saturate(5117%) hue-rotate(343deg) brightness(92%) contrast(93%);
+}
+
+/* Save Changes Button Layout */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 8px;
+}
+.btn-save-changes {
+    background-color: #0f172a;
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}

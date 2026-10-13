@@ -1,0 +1,134 @@
+.reservation-page-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 16px 40px 16px;
+}
+
+.reservation-header-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.reservation-header-text h1 {
+    font-size: 24px;
+    margin: 0 0 16px 0;
+}
+
+.reservation-tabs {
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid transparent;
+    margin-bottom: .25em;
+}
+
+.reservation-tab {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: var(--color-black);
+    cursor: pointer;
+    padding: 0 0 8px 0;
+    position: relative;
+}
+
+.reservation-tab.active {
+    color: var(--color-pink);
+}
+
+.reservation-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-pink);
+}
+
+.reservation-tab-description-text {
+    color: var(--color-gray);
+    font-size: 14px;
+    margin: 0;
+}
+
+.alert-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em 1.05em;
+    border: var(--border-main);
+    border-radius: 12px;
+    max-width: 280px;
+    height: 100%;
+}
+
+.alert-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .75em;
+    background: var(--color-pink-bg);
+    border-radius: 50%;
+    color: var(--color-pink);
+}
+
+.alert-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.alert-text-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.alert-text-description {
+    margin: 0;
+    font-size: 13px;
+    color: var(--color-gray);
+    line-height: 1.4;
+}
+
+.reservation-list {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.reservation-column-headers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    margin-bottom: 1em;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--color-gray);
+}
+
+.header-name { width: 35%; }
+.header-wishlist { width: 25%; }
+.header-date { flex: 1; text-align: center; }
+.header-status { min-width: 11em; text-align: center; }
+
+@media (max-width: 870px) {
+    .alert-box {
+        max-width: 100%;
+        margin-top: 24px;
+        width: 100%;
+    }
+
+    .reservation-header-layout {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .reservation-page-container {
+        padding: 0 16px 24px 16px;
+    }
+}

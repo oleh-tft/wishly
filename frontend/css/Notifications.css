@@ -1,0 +1,299 @@
+  /* Базові налаштування для всієї сторінки */
+  body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #FFFFFF;
+      color: #0f0e1a;
+      /* Включаємо субпіксельне згладжування, щоб шрифт був тонким і чистим як у Figma */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* --- ТВОЇ КОМАНДНІ СТИЛІ ХЕДЕРА (БАЗОВІ) --- */
+  .main-header {
+      width: 100%;
+      padding: 16px 24px;
+      box-sizing: border-box;
+      background-image: url('../pics/Light\ Gradient\ 12\ \(1\).png');
+      background-size: cover;
+      color: white;
+      background-position: center right;
+      background-repeat: no-repeat;
+  }
+
+  .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+  }
+
+  .header-nav,
+  .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .header-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 16px;
+  }
+
+  /* --- ВИПРАВЛЕНІ ДОДАТКОВІ СТИЛІ --- */
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      /* ВИДgroupИЛИ font-family звідси, щоб працював Inter з body */
+  }
+
+  .logo {
+      color: #fff;
+
+      text-decoration: none;
+
+
+      font-family: 'Momo Trust Display';
+      font-weight: 400;
+      font-style: 'Regular';
+      font-size: 24px;
+      line-height: 22.5px;
+      letter-spacing: -0.38px;
+
+  }
+
+
+  .back-link {
+      display: flex;
+      gap: 5px;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 19.5px;
+  }
+
+  .back-link:hover {
+      opacity: 0.9;
+  }
+
+  /* Головний контейнер - ширина змінена на 672px відповідно до Figma */
+  .content-wrapper {
+      max-width: 672px;
+      margin: 40px auto 60px;
+      padding: 0;
+      /* Прибрали бокові падінги контейнера для ідеального Fill */
+  }
+
+  /* Секція заголовка сторінки сповіщень */
+  .notifications-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+
+      width: 672px;
+      height: 58px;
+      opacity: 1;
+
+  }
+
+  /* Текст заголовка "Notifications" з твоїми точними параметрами */
+  .not-text {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: -0.6px;
+      color: #0F0E1A;
+      margin-bottom: 2px;
+
+  }
+
+  .unread-badge {
+      color: #FF4880;
+      font-size: 14px;
+      font-weight: 500;
+  }
+
+  .btn-mark-all {
+      white-space: nowrap;
+      font-family: Inter;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 13px;
+
+      line-height: 19.5px;
+      letter-spacing: 0px;
+      text-align: center;
+
+      background-color: #FBD9E6;
+      color: #FF4880;
+      border: none;
+      padding: 8px 18px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      /* Вирівнювання по вертикалі */
+      justify-content: center;
+
+      width: 145px;
+      height: 36px;
+      padding-top: 8px;
+      padding-right: 14px;
+      padding-bottom: 8px;
+      padding-left: 14px;
+      gap: 6px;
+      opacity: 1;
+      border-radius: 100px;
+
+  }
+
+  .btn-mark-all:hover {
+      background-color: #fbe7eb;
+  }
+
+  .btn-mark-all svg {
+      flex-shrink: 0;
+      display: block;
+  }
+
+
+  /* Таби/Фільтри оформлені в єдину акуратну капсулу по центру */
+  .tabs-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 24px;
+  }
+
+  .filter-tabs {
+      display: inline-flex;
+      background-color: #f1f1f4;
+      padding: 3px;
+      border-radius: 30px;
+  }
+
+  .tab-btn {
+      border: none;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: transparent;
+      color: #636366;
+      text-decoration: none;
+  }
+
+  .tab-btn.active {
+      background-color: #0F0E1A;
+      color: #ffffff;
+  }
+
+  .tab-count {
+      background-color: #FF4880;
+      color: #ffffff;
+      font-size: 11px;
+      padding: 1px 5px;
+      border-radius: 10px;
+      font-weight: 600;
+  }
+
+  /* Список сповіщень */
+  .notifications-card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      border: 1px solid #e5e5ea;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+      overflow: hidden;
+  }
+
+  .notification-row {
+      display: flex;
+      padding: 16px 20px;
+      border-bottom: 1px solid #f2f2f7;
+      align-items: flex-start;
+  }
+
+  .notification-row:last-child {
+      border-bottom: none;
+  }
+
+  /* Точний розмір для іконок-картинок з макета 36x36px */
+  .icon-box {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      margin-right: 14px;
+      flex-shrink: 0;
+      object-fit: cover;
+  }
+
+  /* Текстовий блок сповіщення */
+  .notif-body {
+      flex-grow: 1;
+      padding-right: 16px;
+  }
+
+  .notif-title-line {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 2px;
+  }
+
+  /* Назва сповіщення (SemiBold 600 замість 700, щоб не перевантажувати вагу) */
+  .notif-title {
+      font-weight: 600;
+      font-size: 14px;
+      color: #0F0E1A;
+  }
+
+  .dot-unread {
+      width: 6px;
+      height: 6px;
+      background-color: #FF4880;
+      border-radius: 50%;
+      display: inline-block;
+  }
+
+  /* Опис сповіщення */
+  .notif-desc {
+      color: #717182;
+      font-size: 13.5px;
+      line-height: 1.4;
+      font-weight: 400;
+  }
+
+  /* Правий блок метаданих */
+  .notif-meta {
+      text-align: right;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+      min-width: 80px;
+  }
+
+  .notif-time {
+      color: #717182;
+      font-size: 12px;
+      font-weight: 400;
+  }
+
+  .link-mark-read {
+      color: #6C5CE7;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+  }
+
+  .link-mark-read:hover {
+      text-decoration: underline;
+  }

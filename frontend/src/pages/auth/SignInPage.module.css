@@ -1,0 +1,155 @@
+.authBgGradientTop {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top center;
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+}
+
+.pageWrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5em;
+    z-index: 2;
+}
+
+.leftContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headline {
+    color: var(--color-black);
+    font-family: var(--font-momo);
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.brand {
+    color: var(--color-pink);
+}
+
+.subline {
+    color: var(--color-gray);
+}
+
+.subline a {
+    color: var(--color-pink);
+}
+
+.rightPanel {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formCard {
+    width: 100%;
+    max-width: 368px;
+}
+
+.presentsWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.present {
+    position: absolute;
+}
+
+.presentTr {
+    top: 5vw;
+    right: 3vw;
+    width: 14vw;
+    transform: rotate(10deg);
+    filter: blur(4px);
+    opacity: 80%;
+}
+
+.presentBl {
+    left: 0vw;
+    bottom: 2vw;
+    width: 18vw;
+    transform: rotate(-60deg);
+    filter: blur(2px);
+    opacity: 80%;
+    z-index: 1;
+}
+
+.presentBm {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -13vw;
+    width: 45vw;
+    z-index: 1;
+}
+
+@media (max-width: 1220px) {
+    .pageWrapper {
+        padding: 0 2em;
+    }
+
+
+}
+
+@media (max-width: 1105px) {
+    .pageWrapper {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 .5em;
+        gap: 3em;
+    }
+
+    .headline {
+        color: var(--color-white);
+        font-size: 4.5em;
+    }
+
+    .subline {
+        color: var(--color-white);
+    }
+
+    .subline a {
+        color: var(--color-white);
+        font-weight: 700;
+    }
+
+    .rightPanel {
+        width: 100%;
+    }
+
+    .presentTr {
+        display: none;
+    }
+
+    .presentBl {
+        left: 0vw;
+        bottom: 40%;
+        width: 35vw;
+    }
+
+    .presentBm {
+        left: 40%;
+        transform: translateX(0);
+        bottom: -13vw;
+        width: 65vw;
+        filter: blur(2px);
+    }
+}
+
+@media (max-width: 600px) {
+    .headline {
+        color: var(--color-white);
+        font-size: 12vw;
+    }
+}

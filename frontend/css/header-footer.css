@@ -1,0 +1,79 @@
+/* Base styles applied to EVERY header */
+.main-header {
+    width: 100%;
+    padding: 16px 3%;
+    box-sizing: border-box;
+    
+    background-image: url('../pics/header-grad.png');
+    
+    /* Clean up how the image behaves */
+    background-size: cover;
+    color: white;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Pins items left, center, right */
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header-nav, .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Consistent spacing between menu items or buttons */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    gap: 16px; 
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff; /* Contrast text against the gradient */
+}
+
+/* The circular avatar wrapper */
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    background-color: #FF4880; /* The exact bright pink brand color from your layout */
+    border-radius: 50%;        /* Makes the container perfectly circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    user-select: none;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+.user-avatar:hover {
+    opacity: 0.9;
+}
+/* Notification button default reset */
+.notification-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.bell-icon {
+    font-size: 18px;
+    color: #ffffff;
+}

@@ -1,0 +1,19 @@
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 24px;
+  text-align: center;
+}
+
+.emptyStateText {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.emptyStateSubtext {
+  font-size: 14px;
+  color: var(--color-gray);
+}

@@ -1,0 +1,145 @@
+/* Container padding and boundaries */
+.profile-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top:48px;
+}
+
+/* Titles */
+.profile-title {
+    padding-top:40px;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+}
+.profile-subtitle {
+    color: #8c8c8c;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* --- 2. Bio Card --- */
+.bio-card {
+    background: #ffffff;
+    border: 1px solid #eef0f2;
+    border-radius: 20px;
+    padding: 32px;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+.bio-avatar-large {
+    width: 80px;
+    height: 80px;
+    background-color: #00aeef; /* Light cyan/blue avatar from Figma image */
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bio-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.bio-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+.bio-email {
+    color: #8c8c8c;
+    font-size: 14px;
+    margin: 0;
+}
+.bio-description {
+    color: #5c5c5c;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 8px 0;
+    max-width: 500px;
+}
+.btn-edit-profile {
+    align-self: flex-start;
+    background-color: #ffeef4; /* Very light pink background */
+    color: #ff4880; /* Bold accent pink text color */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* --- 3. Stats Grid --- */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 perfect responsive columns */
+    gap: 16px;
+}
+.stat-card {
+    background: #ffffff;
+    border: 1px solid #eef0f2;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.stat-number {
+    font-size: 36px;
+    font-weight: 700;
+}
+/* Colorful theme bindings matching the text highlights */
+.num-purple { color: #7c3aed; }
+.num-green  { color: #10b981; }
+.num-pink   { color: #f43f5e; }
+.num-orange { color: #f97316; }
+
+.stat-label {
+    font-size: 12px;
+    color: #8c8c8c;
+    font-weight: 500;
+}
+
+/* --- 4. Details Table Card --- */
+.details-card {
+    background: #ffffff;
+    border: 1px solid #eef0f2;
+    border-radius: 16px;
+    overflow: hidden; /* Keeps edge corners clean on borders */
+}
+.details-title {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    padding: 20px 24px;
+}
+.details-table {
+    display: flex;
+    flex-direction: column;
+}
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-top: 1px solid #f4f6f8;
+    font-size: 14px;
+}
+.row-label {
+    color: #8c8c8c;
+}
+.row-value {
+    font-weight: 600;
+    color: #000000;
+}

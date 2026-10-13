@@ -1,0 +1,47 @@
+:root {
+  --color-bg: #FFFFFF;
+  --color-white: #FFFFFF;
+  --color-white-hover: var(--color-pink-bg);
+  --color-black: #0F0E1A;
+  --color-black-hover: #1F1D31;
+  --color-gray: #717182;
+  --color-gray-bg: var(--color-pink-bg);
+  --color-gray-mute: #0F0E1A4D;
+  --color-border: #0F0E1A1A;
+  --color-placeholder-1: #0F0E1A1A;
+  --color-placeholder-2: #0F0E1A40;
+  --color-pink-light: #FBD9E6;
+  --color-pink-light-hover: #FFC5DB;
+  --color-pink: #FF4880;
+  --color-pink-bg: #FFF6FA;
+  --color-pink-hover: #FF6594;
+  --color-green: #1A7A52;
+  --color-green-bg: #EEF7F2;
+  --color-brown: #FF8000;
+  --color-brown-bg: #FFF8ED;
+  --color-indigo: #7F30FF;
+  --color-indigo-bg: #EEF0FF;
+  --color-red: #E03259;
+  --color-red-bg: #FFF0F3;
+  --color-red-hover: #E65878;
+  --color-red-light-hover: #FFD5DE;
+  --color-blue: #3B6CF5;
+  --color-blue-bg: #F0F4FF;
+  --color-blue-light: #00B0FF;
+  --color-blue-light-bg: #C0E6FF;
+  --color-blue-light-hover: var(--color-blue-bg);
+  --color-blue-dark: #0038FF;
+  --color-blue-dark-bg: #EEF1FF;
+  --color-blue-dark-hover: #305DFF;
+  
+  --font-lato: "Lato", "Lato2", sans-serif;
+  --font-momo: "Momo Trust Display", "Montserrat Alternates", sans-serif;
+  
+  --border-main: 1px solid var(--color-border);
+
+  --shadow-main: 0px 4px 32px 0px #0000000F;
+  
+  --radius-main: 16px;
+
+  --opacity-main: 50%;
+}

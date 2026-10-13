@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+</head>
+<body>
+<header class="main-header main-header">
+    <div class="header-container">
+        
+        <div class="header-logo">
+            <span class="logo">wishly</span>
+        </div>
+
+        <nav class="header-nav"></nav>
+
+        <div class="header-right">
+            <span class="user-name">Sara Mitchell</span>
+            
+           <a href="profile.html" class="user-avatar" aria-label="View Profile">
+        <span>S</span>
+    </a>
+            
+            <button class="notification-btn" aria-label="Notifications">
+                 <img src="pics/Bell.png" alt="Bell Icon">
+            </button>
+        </div>
+
+    </div>
+</header>
+
+    <main>
+    <div class="dashboard-layout">
+    <aside class="sidebar">
+    <ul class="sidebar-menu">
+        
+        <li class="menu-item ">
+            <div class="menu-icon">
+                <img src="pics/Wishlist.png" alt="Wishlist Icon">
+            </div>
+            <a href="home.html" class="menu-link">Wishlist</a>
+        </li>
+        
+        <li class="menu-item">
+            <div class="menu-icon">
+                <img src="pics/Shared.png" alt="Shared Icon">
+            </div>
+            <a href="shared.html" class="menu-link">Shared</a>
+        </li>
+        
+        <li class="menu-item" style = "padding: 24px">
+
+            <div class="menu-icon">
+                <img src="pics/Profile.png" alt="Profile Icon">
+            </div>
+            <a href="profile.html" class="menu-link">Profile</a>
+        </li>
+        
+        <li class="menu-item">
+            <div class="menu-icon">
+                <img src="pics/Reservation.png" alt="Reservation Icon">
+            </div>
+            <a href="reservation.html" class="menu-link">Reservation</a>
+        </li>
+        
+        <li class="menu-item active">
+            <span class="active-indicator"></span>
+
+            <div class="menu-icon">
+                <img src="pics/Settings.png" alt="Settings Icon">
+            </div>
+            <a href="settings.html" class="menu-link">Settings</a>
+        </li>
+        
+    </ul>
+</aside>
+    <div class="dashboard-content">
+<div class="settings-container">
+
+    <div class="settings-header-block">
+        <h1 class="settings-title">Settings</h1>
+        <p class="settings-subtitle">Manage your account and preferences.</p>
+    </div>
+
+    <section class="settings-card">
+        <h2 class="card-title">Account Information</h2>
+        <div class="card-body form-grid">
+            
+            <div class="input-group">
+                <label class="input-label">FULL NAME</label>
+                <div class="input-wrapper">
+                    <span class="input-icon">
+                     <img src="pics/Profile-Set.png" alt="Profile Icon">
+
+                    </span>
+                    <input type="text" value="Sara Mitchell" class="form-input">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label class="input-label">EMAIL ADDRESS</label>
+                <div class="input-wrapper">
+                    <span class="input-icon">
+                     <img src="pics/Email-Set.png" alt="Email Icon">
+
+                    </span>
+                    <input type="email" value="sara@wishly.app" class="form-input">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label class="input-label">USERNAME</label>
+                <div class="input-wrapper">
+                    <span class="input-icon">
+                     <img src="pics/User-Set.png" alt="User Icon">
+
+                    </span>
+                    <input type="text" value="@sara_mitchell" class="form-input">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="settings-card">
+        <h2 class="card-title">Preferences</h2>
+        <div class="card-body toggle-list">
+            
+            <div class="toggle-row">
+                <div class="toggle-text">
+                    <span class="toggle-label">Email notifications</span>
+                    <span class="toggle-sub">Receive wishlist updates via email</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="toggle-row">
+                <div class="toggle-text">
+                    <span class="toggle-label">Reservation notifications</span>
+                    <span class="toggle-sub">Get notified when someone reserves an item</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="toggle-row">
+                <div class="toggle-text">
+                    <span class="toggle-label">Wishlist activity</span>
+                    <span class="toggle-sub">Weekly summary of your wishlist activity</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+        </div>
+    </section>
+
+  <section class="settings-card">
+    <h2 class="card-title">Privacy</h2>
+    <div class="card-body">
+        <p class="privacy-prompt">Who can view my wishlists?</p>
+        <div class="radio-options">
+            
+            <label class="radio-card">
+                <input type="radio" name="privacy-setting" value="private">
+                <div class="radio-card-content">
+                    <span class="radio-custom"></span>
+                    <div class="radio-text">
+                        <span class="radio-label">Only me</span>
+                        <span class="radio-sub">Your wishlists are completely private</span>
+                    </div>
+                </div>
+            </label>
+            
+            <label class="radio-card">
+                <input type="radio" name="privacy-setting" value="link-only" checked>
+                <div class="radio-card-content">
+                    <span class="radio-custom"></span>
+                    <div class="radio-text">
+                        <span class="radio-label">Anyone with the link</span>
+                        <span class="radio-sub">Only people you share the link with can view</span>
+                    </div>
+                </div>
+            </label>
+
+        </div>
+    </div>
+</section>
+            <section class="settings-card border-danger">
+                <h2 class="card-title color-danger">Danger Zone</h2>
+                <div class="card-body danger-body">
+                    <div class="toggle-text">
+                        <span class="toggle-label">Delete account</span>
+                        <span class="toggle-sub">Permanently delete your account and all wishlists. This cannot be undone.</span>
+                    </div>
+                    <button class="btn-delete">
+                        <img src="pics/Warning-Set.png" class="btn-img-accent" alt="Warning"> Delete
+                    </button>
+                </div>
+            </section>
+
+            <div class="form-actions">
+                <button class="btn-save-changes">Save Changes</button>
+            </div>
+
+</div>
+        
+        </div>
+        </div>
+
+        </main>
+
+</body>
+</html>

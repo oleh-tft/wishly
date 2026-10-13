@@ -1,0 +1,321 @@
+.profile-page-view {
+  width: 100%;
+  max-width: 47.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding-bottom: 60px;
+}
+
+.page-header-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.page-title {
+  font-family: var(--font-lato);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: .25rem;
+}
+
+.page-subtitle {
+  font-family: var(--font-lato);
+  font-size: 0.875rem;
+  color: var(--color-gray);
+  margin: 0;
+}
+
+/* --- PROFILE BANNER (Avatar Centered, Content Left-Aligned) --- */
+.profile-banner-card {
+  margin-top: 1em;
+  background-color: var(--color-white);
+  border: var(--border-main);
+  border-radius: var(--radius-main);
+  padding: 2em 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Keeps the avatar container row centered */
+  gap: 1.25em;
+}
+
+.avatar-square {
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-pink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.avatar-square span {
+  font-family: var(--font-lato);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.bio-info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Forces name, email, and bio text to the left */
+  text-align: left;
+  /* Aligns typography to the left */
+  width: 100%;
+  min-width: 0;
+}
+
+.bio-name {
+  font-family: var(--font-lato);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin: 0 0 0.25em 0;
+}
+
+.bio-email {
+  font-family: var(--font-lato);
+  font-size: 0.875rem;
+  color: var(--color-gray);
+  margin-bottom: 0.75em;
+}
+
+.bio-text {
+  font-family: var(--font-lato);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-gray);
+  margin: 0 0 1.25em 0;
+  width: 100%;
+  /* Spans full horizontal container bounds naturally */
+}
+
+.bio-action-row {
+  display: flex;
+  justify-content: flex-start;
+  /* Left-aligns the Edit Profile button */
+}
+
+/* --- ANALYTICS STATS (2x2 Grid Layout) --- */
+.analytics-grid {
+  display: flex;
+  gap: 4%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.analytics-grid>* {
+  flex: 1 1 48%;
+  max-width: 48%;
+}
+
+/* --- ACCOUNT DETAILS TABLE PANEL --- */
+.details-table-card {
+  background-color: var(--color-white);
+  border: var(--border-main);
+  border-radius: var(--radius-main);
+  overflow: hidden;
+}
+
+.table-header {
+  padding: 1.25em 1.5em;
+  border-bottom: var(--border-main);
+}
+
+.table-header h3 {
+  font-family: var(--font-lato);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-black);
+}
+
+.table-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-row-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  padding: 1em 1.5em;
+  border-bottom: var(--border-main);
+  font-size: 0.9375rem;
+}
+
+.table-row-item:last-child {
+  border-bottom: none;
+}
+
+.row-label {
+  color: var(--color-gray);
+  flex-shrink: 0;
+}
+
+.row-value {
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+/* --- BOTTOM STICKY FOOTER ACTION --- */
+.settings-footer-actions {
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+.settings-footer-actions button {
+  justify-content: center;
+}
+
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+  width: 100%;
+  text-align: left;
+}
+
+.modal-avatar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: flex-start;
+}
+
+.modal-section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-gray);
+  letter-spacing: 0.05em;
+}
+
+.modal-avatar-circle {
+  position: relative;
+  width: 5.5rem;
+  height: 5.5rem;
+  background-color: var(--color-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+.modal-avatar-circle span {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.modal-avatar-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-blue);
+}
+
+.profile-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Edit Pen badge on bottom right corner */
+.modal-avatar-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-pink-light-hover);
+  color: var(--color-pink);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.modal-avatar-badge:hover {
+  background-color: var(--color-pink-light);
+}
+
+.modal-avatar-badge svg {
+  width: 12px;
+  height: 12px;
+}
+
+.modal-input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Custom styled text-area layout matching InputField architecture */
+.modal-custom-label {
+  font-family: var(--font-lato);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-gray);
+  margin-bottom: 0.5em;
+  letter-spacing: 0.05em;
+}
+
+.modal-custom-textarea {
+  width: 100%;
+  font-family: var(--font-lato);
+  font-size: 0.9rem;
+  padding: 1em;
+  border: var(--border-main);
+  border-radius: var(--radius-main);
+  background-color: var(--color-white);
+  color: var(--color-black);
+  resize: none;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.modal-custom-textarea:focus {
+  border-color: var(--color-pink);
+}
+
+/* --- LARGER VIEWPORTS OPTIMIZATIONS (Tablet / Desktop fallback) --- */
+@media (min-width: 650px) {
+  .profile-banner-card {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2em;
+  }
+
+  .analytics-grid {
+    gap: 1em;
+  }
+
+  .analytics-grid>* {
+    flex: 1;
+    max-width: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .settings-footer-actions .main-button {
+    width: 100%;
+  }
+}

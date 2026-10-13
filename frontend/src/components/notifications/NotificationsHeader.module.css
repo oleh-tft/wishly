@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  min-height: 58px;
+  width: 100%;
+}
+
+.header__titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.header__badge {
+  color: var(--color-pink);
+}
+
+.header__markAll {
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19.5px;
+  letter-spacing: 0;
+  text-align: center;
+
+  background-color: var(--color-pink-light);
+  color: var(--color-pink);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 36px;
+  padding: 8px 14px;
+  gap: 6px;
+  border-radius: 100px;
+  transition: background-color 0.15s;
+}
+
+.header__markAll:hover {
+  background-color: var(--color-pink-light-hover);
+}

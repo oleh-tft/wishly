@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+</head>
+
+<body>
+    <header class="main-header main-header">
+        <div class="header-container">
+
+            <div class="header-logo">
+                <span class="logo">wishly</span>
+            </div>
+
+            <nav class="header-nav"></nav>
+
+            <div class="header-right">
+                <span class="user-name">Sara Mitchell</span>
+
+                <a href="profile.html" class="user-avatar" aria-label="View Profile">
+                    <span>S</span>
+                </a>
+
+                <button class="notification-btn" aria-label="Notifications">
+                    <img src="pics/Bell.png" alt="Bell Icon">
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="dashboard-layout">
+
+            <aside class="sidebar">
+                <ul class="sidebar-menu">
+
+                    <li class="menu-item ">
+                        <div class="menu-icon">
+                            <img src="pics/Wishlist.png" alt="Wishlist Icon">
+                        </div>
+                        <a href="home.html" class="menu-link">Wishlist</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <div class="menu-icon">
+                            <img src="pics/Shared.png" alt="Shared Icon">
+                        </div>
+                        <a href="shared.html" class="menu-link">Shared</a>
+                    </li>
+
+                    <li class="menu-item active" style="padding: 24px">
+                        <span class="active-indicator"></span>
+
+                        <div class="menu-icon">
+                            <img src="pics/Profile.png" alt="Profile Icon">
+                        </div>
+                        <a href="profile.html" class="menu-link">Profile</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <div class="menu-icon">
+                            <img src="pics/Reservation.png" alt="Reservation Icon">
+                        </div>
+                        <a href="reservation.html" class="menu-link">Reservation</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <div class="menu-icon">
+                            <img src="pics/Settings.png" alt="Settings Icon">
+                        </div>
+                        <a href="settings.html" class="menu-link">Settings</a>
+                    </li>
+
+                </ul>
+            </aside>
+
+            <div class="dashboard-content">
+
+                <div class="profile-container">
+
+                    <div class="profile-header-block">
+                        <h1 class="profile-title">Profile</h1>
+                        <p class="profile-subtitle">Your personal information and statistics.</p>
+                    </div>
+
+                    <div class="bio-card">
+                        <div class="bio-avatar-large">S</div>
+                        <div class="bio-info">
+                            <h2 class="bio-name">Sara Mitchell</h2>
+                            <p class="bio-email">sara@wishly.app</p>
+                            <p class="bio-description">Lover of good coffee, quality things, and minimal clutter.
+                                Wishlist enthusiast since 2023.</p>
+                            <button class="btn-edit-profile">
+                                <span class="edit-icon">
+                                    <img src="pics/Edit.png" alt="Edit Icon">
+                                </span> Edit Profile
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-number num-purple">4</span>
+                            <span class="stat-label">Total Wishlists</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number num-green">49</span>
+                            <span class="stat-label">Total Items</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number num-pink">6</span>
+                            <span class="stat-label">Reserved by Others</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number num-orange">3</span>
+                            <span class="stat-label">Lists Shared</span>
+                        </div>
+                    </div>
+
+                    <div class="details-card">
+                        <h3 class="details-title">Account Details</h3>
+                        <div class="details-table">
+                            <div class="table-row">
+                                <span class="row-label">Full Name</span>
+                                <span class="row-value">Sara Mitchell</span>
+                            </div>
+                            <div class="table-row">
+                                <span class="row-label">Username</span>
+                                <span class="row-value">@sara_mitchell</span>
+                            </div>
+                            <div class="table-row">
+                                <span class="row-label">Email</span>
+                                <span class="row-value">sara@wishly.app</span>
+                            </div>
+                            <div class="table-row">
+                                <span class="row-label">Member Since</span>
+                                <span class="row-value">March 2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
