@@ -14,8 +14,8 @@
 # Demo
 
 ### Landing Page
-<img width="1897" height="1027" alt="Landing-Page-2" src="https://github.com/user-attachments/assets/f0a099c8-eb47-413d-8938-c74a4bd6a618" />
 <img width="1897" height="1027" alt="Landing-Page-1" src="https://github.com/user-attachments/assets/d9ab51ab-f1d6-4185-9c89-48b6317e60bf" />
+<img width="1897" height="1027" alt="Landing-Page-2" src="https://github.com/user-attachments/assets/f0a099c8-eb47-413d-8938-c74a4bd6a618" />
 
 ### Authentication Page
 <img width="1917" height="1027" alt="Log In" src="https://github.com/user-attachments/assets/7f949b88-8b0b-4c3d-8d2e-117e70d914bc" />
